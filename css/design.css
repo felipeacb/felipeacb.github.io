@@ -1,0 +1,359 @@
+/*
+paleta de colores
+analogo oscuro: #182F4C;
+analogo medio: #24518C;
+analogo claro: #4887DA;
+complementario: #DCBC05;
+
+border de tarjetas: 1px solid;
+sombra de tarjetas: box-shadow:;
+fondo de tarjeta: #FFF;
+
+fondo de pagina: #F1F1F1;
+
+
+*/
+
+
+body
+{
+	background: #F1F1F1;
+	font-family: 'ubuntu', sans-serif;
+}
+
+header
+{
+	width: 100%;
+	background: white;
+	margin-top: 0px;
+	position: relative;
+
+}
+
+header div#warning-cookies{
+	width: 100%;
+	position: relative;
+	background: #182F4C;
+}
+
+header div#warning-cookies .warning-text
+{
+	margin: 0px;
+	color: #F7F7F7;
+	font-size: 12px;
+	position: relative;
+	padding: 5px;
+	}
+
+header div#warning-cookies p.close-warm{
+	position: absolute;
+	top: -10px;
+	right: 10px;
+	font-size: 10px;
+	color: #F7F7F7;
+	padding: 0px 0px 20px20px;
+	cursor: pointer;
+
+}
+
+header figure, header figure img{
+	margin: 0px;
+	width: 100%;
+}
+
+
+nav
+{
+	text-align: center;
+}
+
+nav ul
+{
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+nav ul li
+{
+	text-align: center;
+	list-style: none;
+	display: inline-block;
+	width: 100%;
+	margin: 0px;
+	font-weight: bold;
+	height: 50px;
+	position: relative;
+
+}
+
+nav ul li a{
+	width: 100%;
+	left: 0px;
+	position: absolute;
+	line-height: 50px;
+	color: #24518C;
+	background: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+nav ul li:hover{
+	color: #F7F7F7;
+	background: #34518C;
+}
+
+div.content-course
+{
+	width: 100%;
+
+}
+
+article
+{
+	width: 95%;
+	margin: 2.5%;
+	background: #FFF;
+	border: 1px solid #E2E2E2;
+	box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+
+}
+
+article div
+{
+	width: 100%;
+	margin: 10px 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+article .visual-course{
+	text-align: center;
+}
+
+article .visual-course figure, article .visual-course img{
+	width: 100%;
+	margin:0px;
+}
+
+article .visual-course .level{
+	position: relative;
+}
+
+article .visual-course .level:before{
+	font-family: 'icomoon';
+	color: #DCBC05;
+	content: "\e9da\e9da\e9da\e9d9\e9d9";
+
+}
+article .visual-course a{
+	
+	color:#F7F7F7;
+	background: #182F4C;
+	text-decoration: none;
+	padding: 15px 50px;
+}
+
+article .details-course{
+	color: #182F4C;
+}
+
+article .details-course h2{
+	font-size: 1.6em;
+	margin-left: 30px;
+}
+
+article .details-course p{
+	margin: 15px 0px;
+	margin-left: 80px;
+	margin-right: 15px;
+	position: relative;
+
+}
+
+article .details-course p:before{
+	font-family: 'icomoon';
+	position: absolute;
+	left: -45px;
+	font-size: 30px;
+	top: -5px;
+	
+}
+
+article .details-course p.videos:before{
+	content: "\e913";
+}
+
+article .details-course p.time:before{
+	content: "\e94f";
+}
+
+article .material-course{
+	position: relative;
+	text-align: center;
+}
+
+article .material-course:before{
+	position: relative;
+	font-family: 'icomoon';
+	color: green;
+	content: "\eac0";
+	font-size: 100px;
+}
+footer
+{
+	background: black;
+	position: relative;
+	padding-bottom: 30px;
+}
+
+footer div
+{
+	display: inline-block;
+	vertical-align: middle;
+	width: 100%;
+}
+
+footer div.money a
+{
+	position: relative;
+	width: 100%;
+	color: F7F7F7;
+	text-decoration: none;
+}
+
+footer div.money a figure{
+	margin: 0px;
+	width: 80%;
+	margin: 10%;
+	max-width: 300px;
+}
+
+footer div.money a figure img{
+	width: 100%;
+	margin:0;
+}
+
+footer div.socialmedia
+{
+	text-align: center;
+}
+
+footer div.socialmedia a{
+	width: 30%;
+	display: inline-block;
+	margin: 0px;
+	text-decoration: none;
+	font-size: 60px;
+
+}
+
+footer div.socialmedia a:before{
+	font-family: 'icomoon';
+	color: #7F7F7F;
+}
+
+footer div.socialmedia a#youtube:before{
+	content: "\ea9e";
+	}
+
+footer div.socialmedia a#twitter:before{
+	content: "\ea97";
+	}
+
+@media screen and (min-width: 480px)
+{
+	
+
+	article
+	{
+		width: 80%;
+		margin: 20px 10%;
+
+	}
+
+	header h1{
+		top: 30%;
+		margin-left: -220px;
+		font-size: 30px;
+		width: 400px;
+		padding: 10px 20px;
+	}
+}
+
+@media screen and (min-width: 767px)
+{
+
+	header h1{
+		top: 30%;
+		margin-left: -340px;
+		font-size: 40px;
+		width: 600px;
+		padding: 30px 40px;
+	}
+	nav ul li
+	{
+		width: 19%;
+	}
+
+	article
+	{
+		width: 70%;
+		margin: 20px 15%;
+
+	}
+
+	article .info-course .details-course{
+		width: 60%;
+		margin: 0px;
+	}
+
+	article .info-course .material-course{
+		width: 35%;
+		margin: 0px;
+
+	}
+
+
+	footer div.money
+	{
+		width: 60%;
+    }
+
+    footer div.money a figure{
+    	margin-left: 0px;
+    	left: 10%;
+    }
+
+    footer div.socialmedia
+    {
+		width: 38%;
+	}
+	
+}
+
+@media screen and (min-width: 950px)
+{
+	header figure{
+		height: 550px;
+		overflow: hidden;
+	}
+
+	header h1{
+		top: 30%;
+		margin-left: -390px;
+		font-size: 60px;
+		width: 700px;
+		padding: 30px 40px;
+	}
+	article .visual-course{
+		width: 40%;
+		
+	}
+
+	article .infourse{
+		width: 59%;
+		
+	}
+}
